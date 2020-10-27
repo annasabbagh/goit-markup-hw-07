@@ -1,0 +1,20 @@
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    .our-team &{
+        margin-bottom: 50px;
+    }
+
+    .what-we-are-doing &{
+        margin-bottom: 50px;
+    }
+}
+
+

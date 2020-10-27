@@ -1,0 +1,61 @@
+.our-features {
+    padding-top: 94px;
+
+    &-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $title-color;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    &-list-item{
+        width: 270px;
+        height: 101px;
+        display: inline-block;
+
+        &:not(:last-child){
+            margin-right: 26px;
+        }
+
+        &::before {
+            content: "";
+            display: inline-flex;
+            margin-bottom: 30px;
+            width: 270px;
+            height: 120px;
+            border-radius: 4px;
+            background-color: $buttons-bg-color;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:nth-child(1)::before{
+            background-image: url(../images/our-features/features-1-antenna.svg);
+        }
+
+        &:nth-child(2)::before{
+            background-image: url(../images/our-features/features-2-clock.svg);
+        }
+    
+        &:nth-child(3)::before{
+            background-image: url(../images/our-features/features-3-diagram.svg);
+        }
+    
+        &:nth-child(4)::before{
+            background-image: url(../images/our-features/features-4-astronaut.svg);
+        }
+
+    }
+
+    &-description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $description-color;
+    }
+}

@@ -1,0 +1,18 @@
+.logo-accent-color{
+    color: $accent-color;
+}
+
+.footer-logo{
+    @include font ($secondary-font, 700, 26px, 1.192, 0.03em, $main-light-theme-color);
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.header-logo{
+    @include font ($secondary-font, 700, 26px, 1.192, 0.03em, #000000);
+    margin-right: 93px ;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+

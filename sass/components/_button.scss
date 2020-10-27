@@ -1,0 +1,14 @@
+.button {
+    @include font ($ff, 700, 16px, 1.875, 0.06em, $main-light-theme-color );
+    background-color: $accent-color;
+    height: 50px;
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 10px 30px;
+    border: none;
+}
+
+
+
+
+
