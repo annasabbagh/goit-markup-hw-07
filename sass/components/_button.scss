@@ -1,5 +1,5 @@
 .button {
-    @include font ($ff, 700, 16px, 1.875, 0.06em, $main-light-theme-color );
+    @include font ($main-font, 700, 16px, 1.875, 0.06em, $main-light-theme-color );
     background-color: $accent-color;
     height: 50px;
     min-width: 200px;

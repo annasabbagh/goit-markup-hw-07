@@ -51,13 +51,8 @@
     }
 
     &-title{
-        font-family: $main-font;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
+        @include font ($main-font, 700, 20px, 1.15, 0.03em, $title-color);
         text-align: center;
-        letter-spacing: 0.03em;
-        color: $title-color;
         margin-bottom: 12px;
     }
 
@@ -67,12 +62,7 @@
     }
 
     &-label{
-        font-family: $main-font;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.167;
-        letter-spacing: 0.01em;
-        color: $description-color;
+        @include font ($main-font, 400, 12px, 1.167, 0.01em, $description-color);
     }
 
     &-input-wrapper{
@@ -127,12 +117,7 @@
         }
 
         &::placeholder{
-            font-family: Roboto;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 1.143;
-            letter-spacing: 0.01em;
-            color: rgba(117, 117, 117, 0.5);
+            @include font ($main-font, 400, 14px, 1.143, 0.01em, rgba(117, 117, 117, 0.5));
         }
     }
 
@@ -143,27 +128,22 @@
     &-policy-message{
         display: flex;
         align-items: center;
-        font-family: $main-font;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: $description-color;
+        @include font ($main-font, 400, 14px, 1.71, 0.03em, $description-color);
+    }
+
+    &-policy-message::before{
+        content: "";
+        display: inline-flex;
+        margin-right: 7px;
+        width: 16px;
+        height: 15px;
+        fill: $title-color;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../images/modal/checkbox.svg);
     
-        &::before{
-            content: "";
-            display: inline-flex;
-            margin-right: 7px;
-            width: 16px;
-            height: 15px;
-            fill: $title-color;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-image: url(../images/modal/checkbox.svg);
-        
-            .modal-policy-checkbox:checked + &{
-                background-image: url(../images/modal/checkbox-active.svg);
-            }
+        .modal-policy-checkbox:checked + &{
+            background-image: url(../images/modal/checkbox-active.svg);
         }
     }
 

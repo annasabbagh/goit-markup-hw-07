@@ -1,12 +1,11 @@
-@mixin font ($ff, $fw, $fs, $lh, $ls, $c) {
+@mixin font ($ff, $fw, $fs, $lh, $ls, $col) {
     font-family: $ff;
     font-weight: $fw;
     font-size: $fs;
     line-height: $lh;
     letter-spacing: $ls;
-    color: $c;
+    color: $col;
 }
 
-
-// @include font ($ff, $fw, $fs, $lh, $ls, $c);
+// @include font ($ff, $fw, $fs, $lh, $ls, $col);
 

@@ -1,48 +1,45 @@
 .header {
     border-bottom: 1px solid #ECECEC;
 
-    &-mail-tel{
+    &-mail-tel-list {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
 
-        &-list {
-            display: flex;
-            align-items: center;
-            margin-left: auto;
+    &-mail-tel-list-item:first-child{
+        margin-right: 50px;
+    }
 
-            &-item:first-child{
-                margin-right: 50px;
-            }
+    &-mail-tel-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-weight: 500;
+        font-size: 14px;        
+        line-height: 1.142;
+        letter-spacing: 0.02em;
+        color: $description-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+            color: $accent-color;
+            fill: $accent-color;
         }
+    }
 
-        &-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 32px;
-            padding-bottom: 32px;
-            font-weight: 500;
-            font-size: 14px;        
-            line-height: 1.142;
-            letter-spacing: 0.02em;
-            color: $description-color;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-            &:hover,
-            &:focus{
-                color: $accent-color;
-                fill: $accent-color;
-            }
-        
-            &-icon{
-                margin-right: 10px;
-                fill: $description-color;
-                transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            
-                .header-mail-tel-link:hover &,
-                .header-mail-tel-link:focus &{
-                    color: $accent-color;
-                    fill: $accent-color;
-                }
-            }
+    &-mail-tel-link-icon{
+        margin-right: 10px;
+        fill: $description-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        .header-mail-tel-link:hover &,
+        .header-mail-tel-link:focus &{
+            color: $accent-color;
+            fill: $accent-color;
         }
     }
 }
@@ -91,11 +88,8 @@
         &:focus{
             color: $accent-color;
             fill: $accent-color;
-        }
-
-        
+        }   
     }
-
 }
 
 

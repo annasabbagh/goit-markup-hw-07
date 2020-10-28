@@ -5,19 +5,19 @@
 
     &-list {
         display: flex;
+    }
 
-        &-item {
-            box-shadow: 
-                0px 1px 3px rgba(0, 0, 0, 0.12),
-                0px 1px 1px rgba(0, 0, 0, 0.14), 
-                0px 2px 1px rgba(0, 0, 0, 0.2);
-            border-bottom-right-radius: 4px;
-            border-bottom-left-radius: 4px;
-            background-color: $main-light-theme-color;
+    &-list-item {
+        box-shadow: 
+            0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        background-color: $main-light-theme-color;
 
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
+        &:not(:last-child) {
+            margin-right: 30px;
         }
     }
 
@@ -45,37 +45,34 @@
         margin-bottom: 16px;
     }
 
-    &-social{
+    &-social-list{
+        display: flex;
+        justify-content: space-between;
+    }
 
-        &-list{
-            display: flex;
-            justify-content: space-between;
+    &-social-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+            outline: none;
         }
+    }
 
-        &-link{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-            &:hover,
-            &:focus {
-                background-color: $accent-color;
-                outline: none;
-            }
-        }
-
-        &-icon{
-            fill: $icons-color;
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-            .our-team-social-link:hover &,
-            .our-team-social-link:focus & {
-                fill: $main-light-theme-color
-            }
+    &-social-icon{
+        fill: $icons-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        .our-team-social-link:hover &,
+        .our-team-social-link:focus & {
+            fill: $main-light-theme-color
         }
     }
 }
